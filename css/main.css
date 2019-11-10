@@ -1,0 +1,360 @@
+body{
+  margin: 0px;
+  display: block;
+  background-color: white;
+}
+
+h1{
+  margin: 0px;
+  font-family: 'amboy-black',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3{
+  font-family: 'Open+Sans',sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+p{
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+button{
+  display: block;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  background-color: black;
+  color: white;
+  font-size: 50px;
+}
+
+.header-image{
+  margin: 0px;
+}
+
+.header-image img{
+  width: 100%;
+  height: 100%;
+}
+
+article{
+  margin: 20px;
+}
+
+/*############ BEGIN MAIN MENU #############*/
+.main-menu{
+  height: 0px;
+  display: block;
+  text-align: center;
+  margin: 0px;
+  transition: 0.5s;
+  /* padding: 0 0 0 400px; */
+}
+
+.main-menu li{
+  width: auto;
+  /* text-align: right; */
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+}
+
+.main-menu li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-menu-labels {
+  margin: 0;
+  padding: 15px 0 0 50px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.sub-menu {
+  padding-left: 0;
+  background-color: #000000;
+  height: 181px;
+  transition: 0.25s;
+}
+.sub-menu li {
+  width: 100%;
+  padding: 5px;
+  /* border: 1px solid #cccccc; */
+  box-sizing: border-box;
+  color: #ffffff;
+}
+/* .sub-menu li a{
+  color: #ffffff;
+  text-decoration: none;
+} */
+
+/*########### END MAIN MENU ##############/
+
+/*########## MOBILE MENU ############*/
+
+
+.menu{
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  background-color: black;
+  color: white;
+}
+
+.show-mobile-menu{
+  height: 300px;
+  transition: height 0.5s;
+  background-color: black;
+  color: white;
+}
+.menu ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu ul li{
+  width: auto;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  justify-content: center;
+  font-size: 1em;
+}
+.menu ul li a{
+  width: 100%;
+  margin-top: 15px;
+  text-align: right;
+  border-bottom: none;
+  text-decoration: none;
+  color: white;
+}
+
+
+@media(min-width: 768px){
+    button{
+    display: none;
+    }
+    .menu{
+      height: 60px;
+      padding: 10px 0px;
+    }
+    .menu ul{
+      display: flex;
+      margin: 0px;
+      padding-right: 10px;
+    }
+    .menu ul li{
+      width: 100%;
+      margin-top: 15px;
+      text-align: right;
+      border-bottom: none;
+    }
+    .main-menu {
+      display: flex;
+      margin: 0px;
+      padding-top: 1%;
+      height: 65px;
+      background-color: black;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+    }
+    .main-menu li {
+      width: 20%;
+      margin-left: 4%;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      list-style-type: none;
+      justify-content: space-between;
+    }
+    .main-menu li a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .main-menu-labels {
+      margin: 0;
+      color: #fff;
+      font-size: 18px;
+    }
+    .sub-menu {
+      padding-left: 0;
+      background-color: #000000;
+      height: 181px;
+      transition: 0.25s;
+    }
+    .sub-menu li {
+      width: 100%;
+      padding: 20px;
+      /* border: 1px solid #cccccc; */
+      box-sizing: border-box;
+      color: #ffffff;
+    }
+    .sub-menu li a{
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .logo{
+      height: 100px;
+    }
+    .logo img{
+      display: inline;
+      width: 100%;
+      /* height: 100px; */
+      margin-top: -20px;
+      padding: 0px;
+    }
+}
+
+/*########## MOBILE MENU END ############*/
+
+
+/*########## MOBILE VIEW ############*/
+
+/*########## MOBILE VIEW END ############*/
+
+
+.hide{
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.show{
+  height: 125px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+
+.toggle-indicator{
+  font-size: 20px;
+}
+
+/*Accordian #############################*/
+
+.accordian-description{
+  height: 0px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  transition: height 0.3s;
+}
+
+.accordian-open{
+  height: 100px;
+  padding: 5px 20px;
+  transition: height 0.3s;
+}
+
+#accordian{
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  #accordian{
+    width: 100%;
+  }
+}
+
+.accordian-headers{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;;
+  margin: 10px auto;
+  color: white;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+/*Accordian End #############################*/
+
+footer{
+  margin: 0px 20px;
+  height: 100px;
+  background-color: #000000;
+  position: relative;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .header-image{
+    margin: 0px;
+  }
+  .header-image img{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+/*############## API ###############*/
+
+@media(min-width: 768px){
+    #city-container{
+      /* margin: 5%; */
+      width: auto;
+      height: 100%;
+    }
+
+    #city-report{
+      /* margin-left: 2%;
+      margin-right: 2%; */
+      padding: 1%;
+      width: auto;
+      height: auto;
+      /* border-style: solid;
+      border-width: thin;
+      border-color: #e4e7eb;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+      /*background-image: linear-gradient(#4a9ef7, #058399);*/
+      /* background: rgba(0, 0, 0, 0.6); */
+    }
+
+    /* p{
+      margin-top: 3%;
+      text-align: left;
+      font-size: 32px;
+      font-weight: normal;
+      color: #edf0f2;
+      font-family: 'Encode Sans Condensed';font-size: 32px;
+    }
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: black;
+    } */
+
+    .answers{
+      color: black;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 1%;
+      letter-spacing: 2px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1em;
+    }
+
+    .title{
+      color: #2d2e2e;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 32px;
+    }
+}
+
+/*############## API END ###############*/
