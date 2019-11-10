@@ -278,7 +278,9 @@ article{
 /*Accordian End #############################*/
 
 footer{
-  margin: 0px 20px;
+  margin: 20px;
+  padding-top: 60px;
+  text-align: center;
   height: 100px;
   background-color: #000000;
   position: relative;
@@ -300,41 +302,15 @@ footer{
 
 @media(min-width: 768px){
     #city-container{
-      /* margin: 5%; */
       width: auto;
       height: 100%;
     }
 
     #city-report{
-      /* margin-left: 2%;
-      margin-right: 2%; */
       padding: 1%;
       width: auto;
       height: auto;
-      /* border-style: solid;
-      border-width: thin;
-      border-color: #e4e7eb;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-      /*background-image: linear-gradient(#4a9ef7, #058399);*/
-      /* background: rgba(0, 0, 0, 0.6); */
     }
-
-    /* p{
-      margin-top: 3%;
-      text-align: left;
-      font-size: 32px;
-      font-weight: normal;
-      color: #edf0f2;
-      font-family: 'Encode Sans Condensed';font-size: 32px;
-    }
-
-    h1 {
-      width: 100%;
-      text-align: center;
-      font-size: 36px;
-      font-weight: bold;
-      color: black;
-    } */
 
     .answers{
       color: black;
