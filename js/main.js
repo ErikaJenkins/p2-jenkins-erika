@@ -2,20 +2,20 @@
 var accordianHeaders = document.querySelectorAll('#accordian .accordian-headers');
 var accordianDescription = document.querySelectorAll('#accordian .accordian-description');
 
-var myMainNavLinks = document.getElementsByClassName('main-menu-labels a');
-var myDropDowns = document.querySelectorAll('.sub-menu li');
+var myMainNavLinks = document.getElementsByClassName('main-menu-labels');
+var myDropDowns = document.querySelectorAll('.sub-menu');
 
 const hamburgerButton = document.getElementById('hamburger');
 // const navMenu = document.querySelector('.main-menu');
 const navMenu = document.querySelector('.main-menu');
 
-var myMainNavLinks = document.getElementsByClassName('main-menu-labels');
 
 function toggleSubMenu(){
   console.log(this.nextElementSibling);
   this.nextElementSibling.classList.toggle('hide');
 }
 
+//##### BEGIN DROP DOWN ########//
 for(i=0; i<myMainNavLinks.length; i++){
   //myMainNavLinks[i].addEventListener('click', toggleSubMenu);
   myMainNavLinks[i].addEventListener('mouseover', toggleSubMenu);
