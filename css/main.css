@@ -85,8 +85,6 @@ article{
 .sub-menu li {
   width: 100%;
   padding: 5px;
-  /* border: 1px solid #cccccc; */
-  box-sizing: border-box;
   color: #ffffff;
 }
 /* .sub-menu li a{
@@ -193,8 +191,6 @@ article{
     .sub-menu li {
       width: 100%;
       padding: 20px;
-      /* border: 1px solid #cccccc; */
-      box-sizing: border-box;
       color: #ffffff;
     }
     .sub-menu li a{
@@ -232,7 +228,6 @@ article{
   overflow: hidden;
   transition: 0.5s;
 }
-
 
 .toggle-indicator{
   font-size: 20px;
